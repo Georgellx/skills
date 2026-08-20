@@ -1,12 +1,12 @@
-# claude-skills
+# skills
 
-我的 [Claude Code](https://claude.com/claude-code) / Claude Agent **skills 收藏**。
+我的 Codex / Claude Agent **skills 收藏**。
 
-每个子目录是一个独立的 skill，至少包含一个 `SKILL.md`，可选 `references/`（按需加载的参考资料）、`scripts/`（可执行脚本）、`assets/`（输出用的模板等）。Claude 会根据每个 skill 的 `description` 自动判断何时调用，也可以手动 `/<skill-name>` 触发。
+每个子目录是一个独立的 skill，至少包含一个 `SKILL.md`，可选 `references/`（按需加载的参考资料）、`scripts/`（可执行脚本）、`assets/`（输出用的模板等）。Agent 会根据每个 skill 的 `description` 自动判断何时调用，也可以手动 `/<skill-name>` 触发。目录名与触发名可能不同，以各目录中的 `SKILL.md` 为准。
 
 ---
 
-## 📦 Skills 列表
+## ⭐ 精选 Skills
 
 | Skill | 一句话说明 |
 |---|---|
@@ -16,6 +16,35 @@
 | [**obsidian-markdown**](./obsidian-markdown) | 写正确的 Obsidian 风格 Markdown——wikilink、嵌入(embed)、callout、properties(frontmatter)、注释等 Obsidian 专属语法，编辑 vault 里的 `.md` 文件时自动触发。第三方来源：[kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)（Obsidian 官方 CEO Steph Ango，MIT）。 |
 | [**obsidian-bases**](./obsidian-bases) | 创建/编辑 Obsidian Bases（`.base`）——给笔记做数据库式视图：表格/卡片视图、按 tag/文件夹/属性/日期过滤、公式与汇总。第三方来源：[kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)。 |
 | [**json-canvas**](./json-canvas) | 创建/编辑 JSON Canvas（`.canvas`）——节点、连线、分组，用来做思维导图、流程图、可视化画布，遵循 [JSON Canvas 1.0](https://jsoncanvas.org/spec/1.0/) 规范。第三方来源：[kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)。 |
+
+## 📦 完整目录（77 个公开 skill）
+
+以下是仓库当前公开的全部 skill。点击目录名可查看对应的 `SKILL.md` 和参考资料。
+
+| Skill | Skill | Skill | Skill |
+|---|---|---|---|
+| [agent-reach](./agent-reach) | [aihot](./aihot) | [aihot-weekly](./aihot-weekly) | [brandalf](./brandalf) |
+| [brandkit](./brandkit) | [brutalist-skill](./brutalist-skill) | [check-impl-against-spec](./check-impl-against-spec) | [competitive-analysis](./competitive-analysis) |
+| [composition-patterns](./composition-patterns) | [content-digest](./content-digest) | [council](./council) | [create-pr](./create-pr) |
+| [de-ai-writing](./de-ai-writing) | [deep-competitor-analysis](./deep-competitor-analysis) | [defuddle](./defuddle) | [deploy-to-vercel](./deploy-to-vercel) |
+| [design-md-first-ui](./design-md-first-ui) | [diagnose-ci-failures](./diagnose-ci-failures) | [edit-talking-head-video](./edit-talking-head-video) | [fix-errors](./fix-errors) |
+| [frontend-design](./frontend-design) | [gpt-tasteskill](./gpt-tasteskill) | [gsap-core](./gsap-core) | [gsap-frameworks](./gsap-frameworks) |
+| [gsap-performance](./gsap-performance) | [gsap-plugins](./gsap-plugins) | [gsap-react](./gsap-react) | [gsap-scrolltrigger](./gsap-scrolltrigger) |
+| [gsap-timeline](./gsap-timeline) | [gsap-utils](./gsap-utils) | [human-writing](./human-writing) | [illustrated-story-video](./illustrated-story-video) |
+| [image-to-code-skill](./image-to-code-skill) | [imagegen-frontend-mobile](./imagegen-frontend-mobile) | [imagegen-frontend-web](./imagegen-frontend-web) | [implement-specs](./implement-specs) |
+| [json-canvas](./json-canvas) | [knowledge-ingest](./knowledge-ingest) | [last30days](./last30days) | [leader](./leader) |
+| [libtv-cli](./libtv-cli) | [life-reset-coach](./life-reset-coach) | [minimalist-skill](./minimalist-skill) | [obsidian-bases](./obsidian-bases) |
+| [obsidian-cli](./obsidian-cli) | [obsidian-markdown](./obsidian-markdown) | [orange-line-illustration](./orange-line-illustration) | [output-skill](./output-skill) |
+| [perry-article-illustrations](./perry-article-illustrations) | [pr-walkthrough](./pr-walkthrough) | [produce-cigar-douyin-video](./produce-cigar-douyin-video) | [react-best-practices](./react-best-practices) |
+| [react-native-skills](./react-native-skills) | [react-view-transitions](./react-view-transitions) | [redesign-skill](./redesign-skill) | [reproduce-bug-report](./reproduce-bug-report) |
+| [resolve-merge-conflicts](./resolve-merge-conflicts) | [respond-to-pr-comments-in-blocklist](./respond-to-pr-comments-in-blocklist) | [review-pr](./review-pr) | [save-webpage-to-obsidian](./save-webpage-to-obsidian) |
+| [self-potential-venture](./self-potential-venture) | [self-understanding-coach](./self-understanding-coach) | [soft-skill](./soft-skill) | [spec-driven-implementation](./spec-driven-implementation) |
+| [stitch-skill](./stitch-skill) | [storage-analyzer](./storage-analyzer) | [taste-skill](./taste-skill) | [taste-skill-v1](./taste-skill-v1) |
+| [update-skill](./update-skill) | [validate-changes-match-specs](./validate-changes-match-specs) | [vercel-cli-with-tokens](./vercel-cli-with-tokens) | [video-use](./video-use) |
+| [web-design-guidelines](./web-design-guidelines) | [wechat-news-cover](./wechat-news-cover) | [write-product-spec](./write-product-spec) | [write-tech-spec](./write-tech-spec) |
+| [xiaohongshu-profile-spider](./xiaohongshu-profile-spider) |  |  |  |
+
+> `job-application-coach` 是本地专用 skill，按仓库规则不会公开到这里。
 
 ---
 
@@ -121,20 +150,20 @@
 
 ## 🚀 安装与使用
 
-把某个 skill 目录复制到你的个人 skills 目录：
+把某个 skill 目录复制到你使用的 Agent 的个人 skills 目录：
 
-- **Windows**：`C:\Users\<你>\.claude\skills\`
-- **macOS / Linux**：`~/.claude/skills/`
+- **Codex（Windows）**：`C:\Users\<你>\.codex\skills\`
+- **Codex（macOS / Linux）**：`~/.codex/skills/`
 
 ```bash
-git clone https://github.com/Georgellx/claude-skills.git
+git clone https://github.com/Georgellx/skills.git
 # Windows (PowerShell)
-Copy-Item -Recurse claude-skills\self-understanding-coach "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse skills\self-understanding-coach "$env:USERPROFILE\.codex\skills\"
 # macOS / Linux
-cp -r claude-skills/self-understanding-coach ~/.claude/skills/
+cp -r skills/self-understanding-coach ~/.codex/skills/
 ```
 
-之后在 Claude Code 里 `/self-understanding-coach` 调用，或在相关话题下让它自动触发。
+之后在 Codex 里 `/self-understanding-coach` 调用，或在相关话题下让它自动触发；其他 Agent 请使用对应的 skills 目录。
 
 ---
 
