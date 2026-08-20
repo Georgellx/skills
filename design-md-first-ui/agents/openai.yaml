@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design.md First UI"
+  short_description: "Draft DESIGN.md before building UI"
+  default_prompt: "Use $design-md-first-ui to draft DESIGN.md before implementing a personal site."

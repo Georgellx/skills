@@ -1,0 +1,19 @@
+{
+  "name": "illustrated-story-video-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render:preview:raw": "remotion render src/index.tsx ScenePreview ../outputs/videos/scene-preview-raw.mp4 --codec=h264 --crf=18 --overwrite --concurrency=2",
+    "strip-audio:preview": "ffmpeg -y -i ../outputs/videos/scene-preview-raw.mp4 -map 0:v:0 -c:v copy -an ../outputs/final/scene-preview-silent.mp4",
+    "render:preview": "npm run render:preview:raw && npm run strip-audio:preview",
+    "render:raw": "remotion render src/index.tsx StoryVideo ../outputs/videos/story-video-raw.mp4 --codec=h264 --crf=18 --overwrite --concurrency=2",
+    "strip-audio": "ffmpeg -y -i ../outputs/videos/story-video-raw.mp4 -map 0:v:0 -c:v copy -an ../outputs/final/story-video-silent.mp4",
+    "render": "npm run render:raw && npm run strip-audio"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.484"
+  }
+}

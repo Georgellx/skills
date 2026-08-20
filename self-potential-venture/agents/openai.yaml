@@ -1,0 +1,4 @@
+interface:
+  display_name: "自我潜能挖掘创业版"
+  short_description: "帮助想做副业的人盘点潜能并生成可验证创业方向假设清单"
+  default_prompt: "Use $self-potential-venture to 帮我从经历、技能和资源里挖掘可验证的创业方向。"

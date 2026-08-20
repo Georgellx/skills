@@ -1,0 +1,4 @@
+interface:
+  display_name: "48小时热点新闻封面"
+  short_description: "结合原图与48小时内热点生成默认16比9新闻封面"
+  default_prompt: "使用 $wechat-news-cover，结合这张原图和我提供的信息，核实48小时内的热点并生成16:9新闻封面。"

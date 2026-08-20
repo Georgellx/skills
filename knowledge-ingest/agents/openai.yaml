@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Ingest"
+  short_description: "Routes conversation results into your Obsidian knowledge base."
+  default_prompt: "Use $knowledge-ingest to decide whether this conversation result should be saved into D:\\KnowledgeBase\\Note and write the right Obsidian note."
