@@ -1,0 +1,4 @@
+interface:
+  display_name: "插画故事视频"
+  short_description: "把文章或选题做成插画扫色视频、SRT字幕与剪映交接包"
+  default_prompt: "Use $illustrated-story-video to turn this article or topic into a validated illustrated story video project with a silent MP4 and importable SRT."

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>AI 退烧贴 · {{期号}} 封面</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;padding:28px;background:#e9e9e9;font-family:-apple-system,'PingFang SC',sans-serif;color:#2b2118}
+  .sheet{width:max-content;margin:0 auto 28px}.label{margin:0 0 8px;color:#666;font-size:13px}.frame{line-height:0;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+</style>
+</head>
+<body>
+  <section class="sheet">
+    <p class="label">头图 900×383</p>
+    <div class="frame">
+      <svg width="900" height="383" viewBox="0 0 900 383" xmlns="http://www.w3.org/2000/svg">
+        <rect width="900" height="383" fill="#f3eee6"/>
+        <text x="54" y="60" font-size="19" fill="#9a8978" letter-spacing="2" font-family="'PingFang SC','Microsoft YaHei',sans-serif">AI 退烧贴 · 第 {{期号}} 期</text>
+        <rect x="54" y="76" width="42" height="4" rx="2" fill="#C0392B"/>
+        <text x="52" y="178" font-size="70" font-weight="700" fill="#2b2118" letter-spacing="1" font-family="'Songti SC','SimSun',serif">{{主文案行1}}</text>
+        <text x="52" y="270" font-size="70" font-weight="700" fill="#C0392B" letter-spacing="1" font-family="'Songti SC','SimSun',serif">{{主文案行2}}</text>
+        <text x="56" y="324" font-size="20" fill="#847565" font-family="'PingFang SC','Microsoft YaHei',sans-serif">{{副文案：证据或场景，不重复主文案}}</text>
+        <!-- 右侧仅放一个识别符或无字插画；重要信息不得依赖它。 -->
+        <g transform="translate(804,94)">
+          <line x1="0" y1="0" x2="0" y2="142" stroke="#C0392B" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="0" cy="163" r="29" fill="#f3eee6" stroke="#C0392B" stroke-width="6"/>
+          <rect x="-5" y="66" width="10" height="97" rx="5" fill="#C0392B"/>
+          <circle cx="0" cy="163" r="15" fill="#C0392B"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="sheet">
+    <p class="label">分享小图 383×383：单独排版，不从头图硬裁</p>
+    <div class="frame">
+      <svg width="383" height="383" viewBox="0 0 383 383" xmlns="http://www.w3.org/2000/svg">
+        <rect width="383" height="383" fill="#f3eee6"/>
+        <text x="34" y="55" font-size="16" fill="#9a8978" letter-spacing="1.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif">AI 退烧贴 · {{期号}}</text>
+        <rect x="34" y="70" width="34" height="4" rx="2" fill="#C0392B"/>
+        <text x="32" y="165" font-size="54" font-weight="700" fill="#2b2118" font-family="'Songti SC','SimSun',serif">{{方图行1}}</text>
+        <text x="32" y="235" font-size="54" font-weight="700" fill="#C0392B" font-family="'Songti SC','SimSun',serif">{{方图行2}}</text>
+        <text x="34" y="307" font-size="17" fill="#847565" font-family="'PingFang SC','Microsoft YaHei',sans-serif">{{方图副文案}}</text>
+        <circle cx="337" cy="337" r="13" fill="#C0392B"/>
+        <line x1="337" y1="279" x2="337" y2="329" stroke="#C0392B" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ñ©ÇÑ¶¶ÒôÊÓÆµÖÆ×÷"
+  short_description: "Create cinematic dynamic cigar videos for Douyin"
+  default_prompt: "Use $produce-cigar-douyin-video to turn my cigar topic, text, or images into a reviewed dynamic Douyin video."

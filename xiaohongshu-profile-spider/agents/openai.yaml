@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xiaohongshu Profile Spider"
+  short_description: "Run Spider_XHS user profile crawls safely."
+  default_prompt: "Use $xiaohongshu-profile-spider to crawl this Xiaohongshu user profile into my chosen local folder."

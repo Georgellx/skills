@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="./tokens.css" />
+    <style>
+      html, body { width: 1080px; height: 1920px; margin: 0; overflow: hidden; background: #f5f5ef; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      .head { display: flex; justify-content: space-between; }
+      .body { position: relative; height: 1370px; padding-top: 58px; }
+      .editorial-title { width: 570px; }
+      .editorial-portrait { position: absolute; top: 56px; right: 0; width: 350px; height: 620px; }
+      .support { width: 560px; margin-top: 84px; font-size: 46px; line-height: 1.35; }
+      .editorial-rule { margin-top: 24px; transform-origin: left center; }
+    </style>
+  </head>
+  <body>
+    <main id="root">
+      <section class="editorial-page">
+        <header class="head editorial-meta"><span>PERSONAL NOTE / 01</span><span>01 / 04</span></header>
+        <div id="rule" class="editorial-rule"></div>
+        <div class="body">
+          <h1 id="title" class="editorial-title">替换为当前口播标题</h1>
+          <div id="portrait" class="editorial-portrait" aria-label="Replace with the approved portrait video"></div>
+          <p id="support" class="support">根据当前语义替换正文，并重新确认人物焦点与安全区。</p>
+        </div>
+        <div id="caption" class="editorial-caption">当前完整语义字幕</div>
+      </section>
+    </main>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const timeline = gsap.timeline({ paused: true });
+      timeline.from("#rule", { scaleX: 0, duration: 0.45, ease: "power3.out" }, 0.18);
+      timeline.from("#title", { y: 34, opacity: 0, duration: 0.5, ease: "power3.out" }, 0.28);
+      timeline.from("#portrait", { x: 46, opacity: 0, duration: 0.5, ease: "expo.out" }, 0.4);
+      timeline.from("#support", { y: 24, opacity: 0, duration: 0.42, ease: "sine.out" }, 0.58);
+      timeline.from("#caption", { opacity: 0, duration: 0.12, ease: "none" }, 0.75);
+      window.__timelines["white-editorial-v2-shell"] = timeline;
+    </script>
+  </body>
+</html>

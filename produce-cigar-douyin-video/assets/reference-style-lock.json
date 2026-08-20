@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "profile_id": "cigar-documentary-reference-20260803",
+  "status": "approved_user_reference",
+  "source": {
+    "sha256": "363d59b4015a7904486692ab33adc410961093c21318ae973ec84833551a415a",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration_seconds": 221.266667,
+    "scene_detection_threshold": 0.25,
+    "strong_scene_changes": 71,
+    "average_shot_seconds": 3.07,
+    "opening_cut_seconds": [2.833333, 5.1, 9.0, 11.0, 13.366667, 14.433333]
+  },
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspect_ratio": "9:16",
+    "adaptation": "native_vertical_reconstruction",
+    "direct_center_crop_allowed": false
+  },
+  "visual": {
+    "rendering": "photorealistic_live_action_documentary",
+    "host_visibility_default": "faceless",
+    "palette": {
+      "headline_white": "#f5f2e9",
+      "numeric_yellow": "#f6d000",
+      "keyword_red": "#b20b18",
+      "tobacco_brown": "#6a3e25",
+      "charcoal": "#14120f",
+      "cream": "#d8c7a9"
+    },
+    "lighting": "warm_practical_low_key",
+    "depth_of_field": "shallow",
+    "preferred_shots": [
+      "moving_hand_closeup",
+      "macro_cigar_or_leaf_texture",
+      "active_work_environment",
+      "tool_or_hygrometer_action",
+      "humidor_action",
+      "camera_push_or_track_with_subject_motion"
+    ]
+  },
+  "typography": {
+    "headline": {
+      "font_family": ["Microsoft YaHei", "Microsoft YaHei UI"],
+      "font_weight": 900,
+      "font_size_px_range": [96, 132],
+      "max_lines": 2,
+      "base_color": "#f5f2e9",
+      "keyword_color": "#b20b18",
+      "number_color": "#f6d000",
+      "number_scale_range": [1.3, 1.45],
+      "lower_subtitle_while_visible": false
+    },
+    "lower_subtitle": {
+      "font_family": ["SimSun", "Songti SC", "Noto Serif CJK SC"],
+      "font_size_px_range": [46, 54],
+      "max_lines": 1,
+      "color": "#ffffff",
+      "stroke_color": "#171411",
+      "stroke_px": 3,
+      "shadow": "0 3px 10px rgba(0,0,0,0.8)",
+      "baseline_height_ratio_range": [0.78, 0.83]
+    },
+    "health_notice": {
+      "text": "视频内容仅为知识科普，吸烟有害健康，请尽早戒烟；未成年人禁止吸烟。",
+      "font_family": ["SimSun", "Songti SC", "Noto Serif CJK SC"],
+      "font_size_px_range": [22, 28],
+      "placement": "top_right_safe_area",
+      "persistent": true
+    }
+  },
+  "headline_motion": {
+    "unit": "semantic_chunk",
+    "chunk_interval_seconds_range": [0.25, 0.5],
+    "entry_frames_range": [2, 4],
+    "entry_scale_range": [1.06, 1.1],
+    "entry_end_scale": 1.0,
+    "elastic_bounce": false,
+    "completed_hold_seconds_range": [0.8, 1.6],
+    "distressed_glitch_frames_range": [6, 10],
+    "distressed_glitch_usage": "selected_opening_proposition_changes_only",
+    "karaoke_word_highlight": false
+  },
+  "opening_15s": {
+    "headline_mode_until_seconds": 9.0,
+    "lower_subtitle_mode_from_seconds": 9.0,
+    "beats": [
+      {"start": 0.0, "end": 2.833333, "purpose": "hook_chunk_build"},
+      {"start": 2.833333, "end": 5.1, "purpose": "second_proposition_with_selected_glitch"},
+      {"start": 5.1, "end": 9.0, "purpose": "core_answer_or_channel_promise"},
+      {"start": 9.0, "end": 11.0, "purpose": "detail_with_lower_subtitle"},
+      {"start": 11.0, "end": 13.366667, "purpose": "match_action_detail"},
+      {"start": 13.366667, "end": 15.0, "purpose": "tactile_closing_detail"}
+    ]
+  },
+  "motion": {
+    "primary_semantic_action_per_shot": 1,
+    "independent_secondary_motion_per_shot": 1,
+    "required_opening_categories": ["human_action", "prop_action", "environment_or_camera_motion"],
+    "max_freeze_seconds": 0.75,
+    "min_moving_frame_ratio": 0.9,
+    "still_pan_zoom_is_video": false,
+    "storyboard_stills_allowed_on_timeline": false
+  },
+  "music": {
+    "mode": "user_supplied_or_none",
+    "auto_source": false,
+    "auto_generate": false,
+    "extract_from_reference": false
+  }
+}

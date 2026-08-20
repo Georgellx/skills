@@ -1,0 +1,4 @@
+interface:
+  display_name: "网页保存到 Obsidian"
+  short_description: "将网页正文与图片保存为本地 Obsidian 笔记"
+  default_prompt: "使用 $save-webpage-to-obsidian 把这个网页的正文和图片保存为本地 Obsidian 笔记。"

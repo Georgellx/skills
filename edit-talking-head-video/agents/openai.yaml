@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文口播视频剪辑"
+  short_description: "规划、试片、剪辑并完成中文竖屏真人口播视频的专业验收"
+  default_prompt: "Use $edit-talking-head-video to analyze, prototype, edit, and verify this Chinese vertical talking-head video."
